@@ -4,11 +4,8 @@ class Solution:
         from collections import Counter
         for s in strs:
             asc=str(sorted(s))
-            if asc in hm:
-                hm[asc].append(s)
-            else:
-                hm[asc].append(s)
-        
+            hm[asc].append(s)
+
         return list(hm.values())
 
 
